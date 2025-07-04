@@ -1,7 +1,7 @@
 // src/onvif/onvifServer.js
 
 const http = require('http');
-const Discovery = require('../../wsdiscovery');
+const Discovery = require('ws-discovery');
 const { XMLParser, XMLBuilder } = require('fast-xml-parser');
 const deviceState = require('../state/deviceState');
 const grpcClient = require('../grpc/grpcClient'); // You'll use this to make gRPC calls

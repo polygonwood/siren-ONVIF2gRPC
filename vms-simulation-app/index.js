@@ -1,6 +1,6 @@
 // vms-simulation-app/index.js
 
-const Discovery = require('../wsdiscovery');
+const Discovery = require('ws-discovery');
 const soapRequest = require('easy-soap-request');
 const { v4: uuidv4 } = require('uuid');
 const { XMLParser, XMLBuilder } = require('fast-xml-parser');
@@ -158,7 +158,7 @@ async function main() {
     probe();
     setInterval(() => {
         probe()
-    }, 10000);
+    }, 15000);
     await new Promise(() => { });
 }
 

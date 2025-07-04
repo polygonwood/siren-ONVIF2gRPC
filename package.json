@@ -16,6 +16,6 @@
     "dotenv": "^17.0.1",
     "express": "^5.1.0",
     "fast-xml-parser": "^5.2.5",
-    "ws-discovery": "^0.4.0"
+    "ws-discovery": "^0.0.2"
   }
 }
