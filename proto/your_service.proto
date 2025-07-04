@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package yourpackage;
+
+// Replace with your actual service definition
+service YourService {
+  rpc GetStreamUri (StreamUriRequest) returns (StreamUriResponse) {}
+  rpc AbsoluteMove (AbsoluteMoveRequest) returns (AbsoluteMoveResponse) {}
+}
+
+message StreamUriRequest {
+  string profileToken = 1;
+}
+
+message StreamUriResponse {
+  string uri = 1;
+}
+
+message PTZVector {
+    double pan = 1;
+    double tilt = 2;
+    double zoom = 3;
+}
+
+message AbsoluteMoveRequest {
+  string profileToken = 1;
+  PTZVector position = 2;
+}
+
+message AbsoluteMoveResponse {
+    PTZVector position = 1;
+}

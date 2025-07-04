@@ -1,0 +1,20 @@
+{
+  "name": "onvifgrpc",
+  "version": "1.0.0",
+  "description": "This Node.js application acts as a virtual ONVIF camera, translating incoming ONVIF messages into gRPC calls to a target device and converting gRPC responses back into ONVIF messages.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "fast-xml-parser": "^5.2.5"
+  }
+}
