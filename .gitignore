@@ -1,3 +1,3 @@
 node_modules/
-grpc-test-server/node_modules
-vms-simulation-app/node_modules
+grpc-test-server/node_modules/
+vms-simulation-app/node_modules/
